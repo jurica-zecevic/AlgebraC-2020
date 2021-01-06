@@ -164,8 +164,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unos_10_brojeva", "ConsoleA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "potprogram", "ConsoleApp2\potprogram.csproj", "{8B1E24EE-A399-403B-AB0C-94D72BA50A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{B193F375-FB01-4AF1-A695-479F4203A2B7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -444,10 +442,6 @@ Global
 		{8B1E24EE-A399-403B-AB0C-94D72BA50A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1E24EE-A399-403B-AB0C-94D72BA50A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1E24EE-A399-403B-AB0C-94D72BA50A2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B193F375-FB01-4AF1-A695-479F4203A2B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B193F375-FB01-4AF1-A695-479F4203A2B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B193F375-FB01-4AF1-A695-479F4203A2B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B193F375-FB01-4AF1-A695-479F4203A2B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -531,7 +525,6 @@ Global
 		{F619AAC8-2A51-4C24-84C7-D224697D844A} = {268F6A4C-0F49-4DBF-A23E-9BA845F8456B}
 		{BEB29147-0EBA-4417-B017-72E9FC187EE0} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{8B1E24EE-A399-403B-AB0C-94D72BA50A2D} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
-		{B193F375-FB01-4AF1-A695-479F4203A2B7} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
