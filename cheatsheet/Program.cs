@@ -72,30 +72,36 @@ namespace cheatsheet
                 Console.WriteLine("Prezime osobe koja u imenu ima 'na'" + item);
             }
 
+            List<Osoba> osobeDefault = new List<Osoba>();
+            osobeDefault.Add(new Osoba { Ime = "John", Prezime = "Doe" });
+
+            var defaultOsoba = osobeDefault.DefaultIfEmpty();
+
             // primjer u array
-            string[] niz_osobe_na = (
+            string[] niz_osobe_default = (
                 from tr_os      // postavimo ime varijable za svaki element kolekcije
-                in osobe.DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" }) //  Ne radi, provjeri zasto
+                in osobe  //  Ne radi, provjeri zasto
                 where tr_os.Ime.Contains("xy")  // filter
                 select tr_os.Prezime   // selektiramo kompletan element
                 ).ToArray();
 
-            Console.WriteLine("Ispis iz niza stringova");
-            foreach (var item in niz_osobe_na)
+
+            Console.WriteLine("Ispis defaultne osobe");
+            foreach (var item in osobeDefault)
             {
-                Console.WriteLine("Prezime osobe koja u imenu ima 'na'" + item);
+                Console.WriteLine("Pronašli smo defaultnu osobu: " + item.Ime + " " + item.Prezime);
             }
 
 
-            // primjer first ili default
-            var osobe_def = (
-            from tr_os      // postavimo ime varijable za svaki element kolekcije
-            in osobe.DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" })        // kolekcija iz koje radimo pretragu
-            where tr_os.Ime.Contains("xx")  // filter
-            select tr_os.Prezime   // selektiramo kompletan element
-            ).FirstOrDefault();
+            //// primjer first ili default
+            //var osobe_def = (
+            //from tr_os      // postavimo ime varijable za svaki element kolekcije
+            //in osobe.DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" })        // kolekcija iz koje radimo pretragu
+            //where tr_os.Ime.Contains("xx")  // filter
+            //select tr_os.Prezime   // selektiramo kompletan element
+            //).FirstOrDefault();
 
-            Console.WriteLine("pronasli smo defaultnu odsobu: " + osobe_def);
+            //Console.WriteLine("pronasli smo defaultnu odsobu: " + osobe_def);
         }
     }
 }
