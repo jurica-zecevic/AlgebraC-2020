@@ -62,10 +62,11 @@ namespace cheatsheet
 
             var osobe_na = (
             from tr_os      // postavimo ime varijable za svaki element kolekcije
-            in osobe.DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" })        // kolekcija iz koje radimo pretragu
+            //in osobe.DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" })        // kolekcija iz koje radimo pretragu
+            in osobe        // kolekcija iz koje radimo pretragu
             where tr_os.Ime.Contains("xa")  // filter
             select tr_os.Prezime   // selektiramo kompletan element
-            ).ToList();
+            ).ToList().DefaultIfEmpty("Doe");
 
             foreach (var item in osobe_na)
             {
@@ -93,6 +94,7 @@ namespace cheatsheet
             }
 
 
+<<<<<<< HEAD
             //// primjer first ili default
             //var osobe_def = (
             //from tr_os      // postavimo ime varijable za svaki element kolekcije
@@ -102,6 +104,19 @@ namespace cheatsheet
             //).FirstOrDefault();
 
             //Console.WriteLine("pronasli smo defaultnu odsobu: " + osobe_def);
+=======
+
+            //     ---->    PRIMJER DefaultIfEmpty() , hvala Jasmin Medved
+            // primjer first ili default
+            var osobe_def = (
+            from tr_os      // postavimo ime varijable za svaki element kolekcije
+            in osobe        // kolekcija iz koje radimo pretragu
+            where tr_os.Ime.Contains("xx")  // filter
+            select tr_os   // selektiramo kompletan element
+            //).FirstOrDefault();
+            ).ToList().DefaultIfEmpty(new Osoba { Ime = "Jane", Prezime = "Doe" }).FirstOrDefault();
+            Console.WriteLine("pronasli smo defaultnu odsobu: " + osobe_def.Prezime);
+>>>>>>> 3fa95e22d8e1c4edb00625f97a0b5540d79b6a04
         }
     }
 }
