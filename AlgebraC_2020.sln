@@ -202,6 +202,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{384D7890
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{A250BCDF-CF75-4448-B831-2C75BCF27C74}"
 EndProject
+<<<<<<< HEAD
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jzecevic-ispit", "jzecevic-ispit", "{6FF888A9-86DC-4933-AA8E-8B52A5CB2BA3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak_1", "Zadatak_1\Zadatak_1.csproj", "{67EBCD2C-140A-4968-8E34-69D35458C79F}"
@@ -209,6 +210,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak_2", "Zadatak_2\Zadatak_2.csproj", "{D0AB0A02-9BAF-4DFA-B6C8-CC6386B96CB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak_3", "Zadatak_3\Zadatak_3.csproj", "{39368869-B566-4F69-B3C9-4D776FEE2444}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prva", "AlgebraMVC2020\AlgebraMVC2020\WebApplication1\Prva.csproj", "{3525DE07-0453-4CAB-9312-5E4EA2C0615F}"
+>>>>>>> 177034846d69f8b61f232951dc4439ac07db0345
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -532,6 +536,7 @@ Global
 		{CE479E32-3241-40C7-AF9F-08792ED61327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE479E32-3241-40C7-AF9F-08792ED61327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE479E32-3241-40C7-AF9F-08792ED61327}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{67EBCD2C-140A-4968-8E34-69D35458C79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67EBCD2C-140A-4968-8E34-69D35458C79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67EBCD2C-140A-4968-8E34-69D35458C79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -544,6 +549,12 @@ Global
 		{39368869-B566-4F69-B3C9-4D776FEE2444}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39368869-B566-4F69-B3C9-4D776FEE2444}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39368869-B566-4F69-B3C9-4D776FEE2444}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{3525DE07-0453-4CAB-9312-5E4EA2C0615F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3525DE07-0453-4CAB-9312-5E4EA2C0615F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3525DE07-0453-4CAB-9312-5E4EA2C0615F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3525DE07-0453-4CAB-9312-5E4EA2C0615F}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 177034846d69f8b61f232951dc4439ac07db0345
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
