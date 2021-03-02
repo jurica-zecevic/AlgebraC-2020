@@ -28,14 +28,14 @@ namespace BazaPoklona.Controllers
         public async Task<IActionResult> OstvareniPromet()
         {
 
-// SELECT
-// max(Naziv) as NazivRobe,
-// VrstaRobe,
-// sum(Cijena) AS UkupnoLovePoVrstiRobe
-// FROM dbo.Poklon
-// GROUP BY VrstaRobe
-            
-//TODO Sredi Lambda expression
+            // SELECT
+            // max(Naziv) as NazivRobe,
+            // VrstaRobe,
+            // sum(Cijena) AS UkupnoLovePoVrstiRobe
+            // FROM dbo.Poklon
+            // GROUP BY VrstaRobe
+
+            //TODO Sredi Lambda expression
             /*
             var promet = await _context.Poklons
                 .GroupBy(x=>x.VrstaRobe)
@@ -43,10 +43,11 @@ namespace BazaPoklona.Controllers
                 .ToListAsync();
             */
 
-
-//TODO Sredi raw SQL
+            //TODO Sredi raw SQL
             var promet = _context.Poklons
-    .FromSqlRaw("SELECT max(Naziv) as NazivRobe, VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon GROUP BY VrstaRobe")
+    .FromSqlRaw(@"SELECT max(dbo.Poklon.Naziv) as NazivRobe, max(dbo.VrstaRobe.Naziv) AS VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon
+JOIN dbo.VrstaRobe ON dbo.Poklon.VrstaRobe = dbo.VrstaRobe.Id
+ GROUP BY VrstaRobe")
     .ToList();
             return View(promet);
         }
